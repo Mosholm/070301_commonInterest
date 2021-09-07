@@ -58,6 +58,72 @@ nav ul li:hover {
   color: white;
 }
 
+/* Styling the Grid  */
+
+.grid_beer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5vw 5vw 5vw 5vw;
+  row-gap: 2vw;
+}
+
+.flex_beer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.image_beer{
+  width: 20vw;
+  height: 20vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#pilsner_image{
+  background-image: url(../images/Illustrations/PILSNER_carlsberg.svg);
+}
+
+#pale_image{
+  background-image: url(../images/Illustrations/PALEALE_leffe.svg);
+}
+
+#ipa_image{
+  background-image: url(../images/Illustrations/IPA_stonewall.svg);
+}
+
+#stout_image{
+  background-image: url(../images/Illustrations/STOUT-limfjord.svg);
+}
+
+#sour_image{
+  background-image: url(../images/Illustrations/SOUR_Berry.svg);
+}
+
+#weissbeer_image{
+  background-image: url(../images/Illustrations/WIESSBEER_erdinger.svg);
+}
+
+#amber_image{
+  background-image: url(../images/Illustrations/AMBERBEER_Americanamber.svg);
+}
+
+#nonalcho_image{
+  background-image: url(../images/Illustrations/NOALCHO_Drinkinthesun\ copy.svg);
+  padding-bottom: 0vw;;
+ }
+
+.grid_beer a{
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-size: 1.5vw;
+  color: var(--color-5);
+  margin-top: 1vw;
+}
+
 /* Styling the footer */
 
 footer{
