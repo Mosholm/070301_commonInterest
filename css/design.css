@@ -33,6 +33,20 @@ nav li {
   margin: 1rem;
 }
 
+/* Styling the Grid  */
+
+.grid_beer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+/* .flex_beer{
+  width: 10vw;
+  height: 10vw;
+} */
+
+
 /* Styling the footer */
 
 footer{
