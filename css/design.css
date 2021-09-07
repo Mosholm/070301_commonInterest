@@ -12,30 +12,54 @@
   --secondary-font: "Montserrat", sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
+main {
+  padding-top: 110px;
+}
+
 header {
   display: flex;
+  position: fixed;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
 }
 
 .logo {
-  padding-top: 1rem;
+  font-family: var(--secondary-font);
+  padding-top: 1.2rem;
+  color: red;
+  font-size: 28px;
+  text-transform: uppercase;
 }
-nav ul {
+header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0;
+  font-family: var(--primary-font);
+  font-size: 15px;
+  color: var(--color-2);
+  padding: 0;
 }
 
-nav li {
+header nav li {
   list-style: none;
-  margin: 1rem;
+  margin: 0.8vw 1.5vw 0.3vw;
+  padding: 7px;
+}
+
+nav ul li:hover {
+  background-color: var(--color-2);
+  color: white;
 }
 
 /* Styling the footer */
 
-footer{
+footer {
   background-color: blue;
 }
-
