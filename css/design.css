@@ -60,6 +60,87 @@ nav ul li:hover {
 
 /* Styling the footer */
 
-footer {
-  background-color: blue;
+footer{
+  background-color: var(--color-2);
+  /* height: 20vw; */
+}
+
+.footer_flex1{
+display: flex;
+justify-content: space-between;
+padding: 1vw 0vw 0vw 5vw;
+}
+
+footer h2{
+  color: var(--color-5);
+  font-family: var(--primary-font);
+  font-size: 3vw;
+  margin-top: 1vw;
+
+}
+
+footer h3{
+  color: white;
+  font-family: var(--secondary-font);
+  font-size: 1.2vw;
+  font-style: italic;
+  font-weight: 100;
+  margin-top: -1vw;
+}
+
+footer p{
+  color: white;
+  font-family: var(--secondary-font);
+  font-size: 1.5vw;
+  margin-right: 2rem;
+}
+
+.newsletter p{
+  font-family: var(--primary-font);
+}
+
+.email{
+  background: white;
+  opacity: 0.4;
+  height: 3vw;
+  width: 30vw;
+  border-radius: 3px;
+  margin-bottom: 1vw;
+}
+
+.newsletter button{
+  background-color: var(--color-3);
+  border: none;
+  color: var(--color-5);
+  font-family: var(--primary-font);
+  font-size: 1vw;
+  padding: 1vw 2px;
+  height: 3vw;
+  width: 30vw;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.newsletter{
+  padding-right: 5vw;
+}
+
+.footer_flex2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10vw 2vw 5vw;
+  margin-top: -4vw; 
+}
+
+/* .footer_illustrations{
+  padding-right: 20vw;
+} */
+
+footer img{
+  width: 2vw;
+  margin-left: 2vw;
 }
