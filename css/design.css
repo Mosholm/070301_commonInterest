@@ -37,12 +37,13 @@ nav li {
 
 footer{
   background-color: var(--color-2);
+  /* height: 20vw; */
 }
 
 .footer_flex1{
 display: flex;
 justify-content: space-between;
-padding: 1rem 2rem 2rem 2rem;
+padding: 1vw 0vw 0vw 5vw;
 }
 
 footer h2{
@@ -50,6 +51,7 @@ footer h2{
   font-family: var(--primary-font);
   font-size: 3vw;
   margin-top: 1vw;
+
 }
 
 footer h3{
@@ -78,7 +80,7 @@ footer p{
   height: 3vw;
   width: 30vw;
   border-radius: 3px;
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 
 .newsletter button{
@@ -87,7 +89,8 @@ footer p{
   color: var(--color-5);
   font-family: var(--primary-font);
   font-size: 1vw;
-  padding: 10px 20px;
+  padding: 1vw 2px;
+  height: 3vw;
   width: 30vw;
   border-radius: 3px;
   text-align: center;
@@ -95,16 +98,24 @@ footer p{
   display: inline-block;
 }
 
+.newsletter{
+  padding-right: 5vw;
+}
+
 .footer_flex2{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 10rem 1rem 2rem;
-  margin-top: -5.7vw;
+  padding: 0 10vw 2vw 5vw;
+  margin-top: -4vw; 
 }
 
+/* .footer_illustrations{
+  padding-right: 20vw;
+} */
+
 footer img{
-  min-width: 2rem;
-  margin-left: 2rem;
+  width: 2vw;
+  margin-left: 2vw;
 }
