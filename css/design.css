@@ -36,6 +36,6 @@ nav li {
 /* Styling the footer */
 
 footer{
-  background-color: blue;
+  background-color: var(--color-2);
 }
 
