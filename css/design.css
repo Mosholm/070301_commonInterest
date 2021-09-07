@@ -33,9 +33,80 @@ nav li {
   margin: 1rem;
 }
 
-/* Styling the footer */
+.slider {
+  /* line them up horizontally */
+  display: flex;
 
-footer{
-  background-color: blue;
+  /* allow for scrolling */
+  overflow-x: auto;
+
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
 }
 
+.slider > * {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  flex-shrink: 0;
+  width: 60vw;
+  height: 300px;
+  margin: 4rem 2rem 1rem;
+  padding: 1rem;
+  font-family: var(--primary-font);
+}
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-row: 1/4;
+}
+
+.explore .image {
+  background-image: url("../images/Illustrations/AMBERBEER_Amberalevirklund.svg");
+}
+
+.event .image {
+  background-image: url("../images/Illustrations/IPA_rockscience.svg");
+}
+
+.subscribe .image {
+  background-image: url("../images/Illustrations/SOUR_Frond.svg");
+}
+
+.slider a {
+  color: var(--color-1);
+  text-underline-offset: var(--offset, 0.2em);
+  text-decoration: underline 0.15em;
+  transition: --offset 800ms, text-decoration-color 800ms;
+  font-size: 1rem;
+}
+
+.slider a:hover {
+  --offset: 0.4em;
+}
+button {
+  background-color: var(--color-2);
+  border-radius: 0.5rem;
+  border: none;
+  font-family: var(--primary-font);
+  color: var(--color-5);
+}
+
+.slider .explore {
+  /* make sure the width is honored */
+  background-color: var(--color-3);
+}
+
+.slider .event {
+  background-color: var(--color-1);
+}
+
+.slider .subscribe {
+  background-color: var(--color-4);
+}
+
+/* Styling the footer */
+
+footer {
+  background-color: blue;
+}
