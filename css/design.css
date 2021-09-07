@@ -32,3 +32,10 @@ nav li {
   list-style: none;
   margin: 1rem;
 }
+
+/* Styling the footer */
+
+footer{
+  background-color: blue;
+}
+
