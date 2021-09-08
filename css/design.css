@@ -58,28 +58,56 @@ nav ul li:hover {
   color: white;
 }
 
+.productDisplay {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  margin: 5rem;
+  background-color: var(--color-1);
+}
+
+.productCard {
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px var(--color-3);
+  max-height: 20rem;
+}
+.imageContainer {
+  order: -1;
+  margin: 0;
+  width: 50%;
+  background-color: blue;
+}
+
+.imageContainer{
+  background-image: url(../images/Illustrations/IPA_Rockfantasy.svg);
+
+}
+
+/* .beerInfo button{
+ 
+} */
 /* Styling the footer */
 
-footer{
+footer {
   background-color: var(--color-2);
   /* height: 20vw; */
 }
 
-.footer_flex1{
-display: flex;
-justify-content: space-between;
-padding: 1vw 0vw 0vw 5vw;
+.footer_flex1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 0vw 0vw 5vw;
 }
 
-footer h2{
+footer h2 {
   color: var(--color-5);
   font-family: var(--primary-font);
   font-size: 3vw;
   margin-top: 1vw;
-
 }
 
-footer h3{
+footer h3 {
   color: white;
   font-family: var(--secondary-font);
   font-size: 1.2vw;
@@ -88,18 +116,18 @@ footer h3{
   margin-top: -1vw;
 }
 
-footer p{
+footer p {
   color: white;
   font-family: var(--secondary-font);
   font-size: 1.5vw;
   margin-right: 2rem;
 }
 
-.newsletter p{
+.newsletter p {
   font-family: var(--primary-font);
 }
 
-.email{
+.email {
   background: white;
   opacity: 0.4;
   height: 3vw;
@@ -108,7 +136,7 @@ footer p{
   margin-bottom: 1vw;
 }
 
-.newsletter button{
+.newsletter button {
   background-color: var(--color-3);
   border: none;
   color: var(--color-5);
@@ -123,24 +151,24 @@ footer p{
   display: inline-block;
 }
 
-.newsletter{
+.newsletter {
   padding-right: 5vw;
 }
 
-.footer_flex2{
+.footer_flex2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 0 10vw 2vw 5vw;
-  margin-top: -4vw; 
+  margin-top: -4vw;
 }
 
 /* .footer_illustrations{
   padding-right: 20vw;
 } */
 
-footer img{
+footer img {
   width: 2vw;
   margin-left: 2vw;
 }
