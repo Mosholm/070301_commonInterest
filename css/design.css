@@ -58,31 +58,7 @@ nav ul li:hover {
   color: white;
 }
 
-.productDisplay {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 2rem;
-  margin: 5rem;
-  background-color: var(--color-1);
-}
 
-.productCard {
-  display: flex;
-  justify-content: space-between;
-  border: solid 2px var(--color-3);
-  max-height: 20rem;
-}
-.imageContainer {
-  order: -1;
-  margin: 0;
-  width: 50%;
-  background-color: blue;
-}
-
-.imageContainer{
-  background-image: url(../images/Illustrations/IPA_Rockfantasy.svg);
-
-}
 
 /* .beerInfo button{
  
