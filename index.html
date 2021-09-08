@@ -1,156 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beers&Branches</title>
-    <link rel="stylesheet" href="css/design.css">
-</head>
+    <link rel="stylesheet" href="css/design.css" />
+  </head>
 
-<!-- This site is the category overview site -->
+  <!-- This site is the category overview site -->
 
-<body>
+  <body>
     <header>
-        <div class="logo">Beers & Branches</div>
-        <nav>
-            <ul>
-                <li><a src="">Pilsner</a></li>
-                <li><a src="">Pale Ale</a></li>
-                <li><a src="">IPA</a></li>
-                <li><a src="">Stou</a>t</li>
-                <li><a src="">Sour</a></li>
-                <li><a src="">Weissbeer</a></li>
-                <li><a src="">Amber beer</a></li>
-                <li><a src="">Non-alcoholic</a></li>
-            </ul>
-        </nav>
+      <div class="logo">Beers & Branches</div>
+      <nav id="beer-cate-nav">
+        <ul>
+          <li>
+            <a data-type="Pilsner" class="button" href="productList.html"
+              >Pilsner</a
+            >
+          </li>
+          <li>
+            <a data-type="" class="button" href="productList.html">Pale Ale</a>
+          </li>
+          <li><a class="button" href="productList.html">IPA</a></li>
+          <li><a class="button" href="productList.html">Stout</a></li>
+          <li><a class="button" href="productList.html">Sour</a></li>
+          <li><a class="button" href="productList.html">Weissbeer</a></li>
+          <li><a class="button" href="productList.html">Amber beer</a></li>
+          <li><a class="button" href="productList.html">Non-alcoholic</a></li>
+        </ul>
+        <!--<template>
+          <li class="be">
+            <a class="catebeer" href="productList.html">hey</a>
+          </li>
+        </template>
+        <ul></ul>-->
+      </nav>
     </header>
     <main>
+      <div class="carousel">
+        <div class="slider">
+          <div class="explore">
+            <div class="image"></div>
+            <div class="sliderContent">
+              <h1>Explore more Amber Beer</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, quidem velit! Tempore illum a sapiente consequuntur
+                illo sint aperiam. Culpa similique
+              </p>
 
-        <div class="carousel">
-
-            <div class="slider">
-                <div class="explore">
-                    <div class="image"></div>
-                    <div class="sliderContent">
-                        <h1>Explore more Amber Beer</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quidem velit! Tempore
-                            illum a
-                            sapiente consequuntur illo sint aperiam. Culpa similique</p>
-
-                        <button><a href="productList.html">Click to explore</a></button>
-                    </div>
-                </div>
-
-                <div class="event">
-                    <div class="image"></div>
-                    <div class="sliderContent">
-                        <h1>Join our event</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quidem velit! Tempore
-                            illum a
-                            sapiente consequuntur illo sint aperiam. Culpa similique</p>
-
-                        <button><a href="##">Click for more information</a></button>
-
-                    </div>
-
-                </div>
-
-                <div class="subscribe">
-                    <div class="image"></div>
-                    <div class="sliderContent">
-
-                        <h1>Be a part of the largest beer community</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quidem velit! Tempore
-                            illum a
-                            sapiente consequuntur illo sint aperiam. Culpa similique</p>
-
-                        <button><a href="##">Click to subscribe</a></button>
-                    </div>
-                </div>
+              <button><a href="productList.html">Click to explore</a></button>
             </div>
+          </div>
 
+          <div class="event">
+            <div class="image"></div>
+            <div class="sliderContent">
+              <h1>Join our event</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, quidem velit! Tempore illum a sapiente consequuntur
+                illo sint aperiam. Culpa similique
+              </p>
+
+              <button><a href="##">Click for more information</a></button>
+            </div>
+          </div>
+
+          <div class="subscribe">
+            <div class="image"></div>
+            <div class="sliderContent">
+              <h1>Be a part of the largest beer community</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, quidem velit! Tempore illum a sapiente consequuntur
+                illo sint aperiam. Culpa similique
+              </p>
+
+              <button><a href="#">Click to subscribe</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1>hi</h1>
+
+      <div class="grid_beer">
+        <div class="flex_beer">
+          <div class="image_beer" id="pilsner_image"></div>
+          <a href="productList.html">Pilsner</a>
         </div>
 
-
-        <h1>hi</h1>
-
-
-        <div class="grid_beer">
-            <div class="flex_beer">
-                <div class="image_beer" id="pilsner_image">
-                </div>
-                <a href="productList.html">Pilsner</a>
-            </div>
-
-            <div class="flex_beer">
-                <div class="image_beer" id="pale_image">
-                </div>
-                <a href="productList.html">Pale Ale</a>
-            </div>
-
-            <div class="flex_beer">
-                <div class="image_beer" id="ipa_image">
-                </div>
-                <a href="productList.html">IPA</a>
-            </div>
-
-            <div class="flex_beer">
-                <div class="image_beer" id="stout_image">
-                </div>
-                <a href="productList.html">Stout</a>
-            </div>
-
-            <div class="flex_beer">
-                <div class="image_beer" id="sour_image">
-                </div>
-                <a href="productList.html ">Sour</a>
-            </div>
-
-            <div class="flex_beer">
-                <div class="image_beer" id="weissbeer_image">
-                </div>
-                <a href="productList.html">Weissbeer</a>
-            </div>
-
-            <div class="flex_beer">
-                <div class="image_beer" id="amber_image">
-                </div>
-                <a href="productList.html">Amber Beer</a>
-            </div>
-
-            <div class="flex_beer">
-                <div class="image_beer" id="nonalcho_image">
-                </div>
-                <a href="productList.html">Non-alchoholic</a>
-            </div>
+        <div class="flex_beer">
+          <div class="image_beer" id="pale_image"></div>
+          <a href="productList.html">Pale Ale</a>
         </div>
+
+        <div class="flex_beer">
+          <div class="image_beer" id="ipa_image"></div>
+          <a href="productList.html">IPA</a>
+        </div>
+
+        <div class="flex_beer">
+          <div class="image_beer" id="stout_image"></div>
+          <a href="productList.html">Stout</a>
+        </div>
+
+        <div class="flex_beer">
+          <div class="image_beer" id="sour_image"></div>
+          <a href="productList.html ">Sour</a>
+        </div>
+
+        <div class="flex_beer">
+          <div class="image_beer" id="weissbeer_image"></div>
+          <a href="productList.html">Weissbeer</a>
+        </div>
+
+        <div class="flex_beer">
+          <div class="image_beer" id="amber_image"></div>
+          <a href="productList.html">Amber Beer</a>
+        </div>
+
+        <div class="flex_beer">
+          <div class="image_beer" id="nonalcho_image"></div>
+          <a href="productList.html">Non-alchoholic</a>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="footer_flex1">
-            <div>
-                <h2>Beers and Branches</h2>
-            </div>
-            <div class="newsletter">
-                <p>Subscribe to our newsletter</p>
-                <div class="email"></div>
-                <button>Subscribe</button>
-            </div>
+      <div class="footer_flex1">
+        <div>
+          <h2>Beers and Branches</h2>
         </div>
-        <div class="footer_flex2">
-            <p>beers@branches.com</p>
-            <p>+xx xxxxxxxx</p>
-            <div class="footer_illustrations">
-                <img src="images/facebook-icon.svg" alt="Facebook Icon">
-                <img src="images/Instagram-icon.svg" alt="Instagram Icon">
-                <img src="images/linkedin-icon.svg" alt="Linkedin Icon">
-            </div>
+        <div class="newsletter">
+          <p>Subscribe to our newsletter</p>
+          <div class="email"></div>
+          <button>Subscribe</button>
         </div>
+      </div>
+      <div class="footer_flex2">
+        <p>beers@branches.com</p>
+        <p>+xx xxxxxxxx</p>
+        <div class="footer_illustrations">
+          <img src="images/facebook-icon.svg" alt="Facebook Icon" />
+          <img src="images/Instagram-icon.svg" alt="Instagram Icon" />
+          <img src="images/linkedin-icon.svg" alt="Linkedin Icon" />
+        </div>
+      </div>
     </footer>
-
-</body>
-<script src="js/categoryOverview.js"></script>
-
+  </body>
+  <script src="js/categoryOverview.js"></script>
 </html>

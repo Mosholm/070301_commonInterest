@@ -1,56 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pick a beer</title>
-    <link rel="stylesheet" href="css/design.css">
-</head>
+    <link rel="stylesheet" href="css/design.css" />
+  </head>
 
-<!-- When you have clicked on a certain category, you will inter this site with 3 beers-->
+  <!-- When you have clicked on a certain category, you will inter this site with 3 beers-->
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li>type</li>
-                <li>type</li>
-                <li>type</li>
-                <li>type</li>
-                <li>type</li>
-                <li>type</li>
-                <li>type</li>
-                <li>type</li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a data-type="Pilsner" class="button" href="productList.html"
+              >Pilsner</a
+            >
+          </li>
+          <li>
+            <a data-type="Pale Ale" class="button" href="productList.html"
+              >Pale Ale</a
+            >
+          </li>
+          <li>
+            <a
+              data-type="Indian Pale Ale"
+              class="button"
+              href="productList.html"
+              >IPA</a
+            >
+          </li>
+          <li>
+            <a data-type="Stout" class="button" href="productList.html"
+              >Stout</a
+            >
+          </li>
+          <li>
+            <a data-type="Sour" class="button" href="productList.html">Sour</a>
+          </li>
+          <li>
+            <a data-type="Wheat " class="button" href="productList.html"
+              >Weissbeer</a
+            >
+          </li>
+          <li>
+            <a data-type="Amber" class="button" href="productList.html"
+              >Amber beer</a
+            >
+          </li>
+          <li>
+            <a data-type="Non-alcoholic" class="button" href="productList.html"
+              >Non-alcoholic</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-<article></article>
-<article></article>
-<article></article>
+      <article>
+        <div class="infoAllBeer"></div>
+      </article>
     </main>
     <footer>
-        <div class="footer_flex1">
-            <div>
-            <h2>Beers and Branches</h2>
+      <div class="footer_flex1">
+        <div>
+          <h2>Beers and Branches</h2>
         </div>
-            <div class="newsletter">
-                <p>Subscribe to our newsletter</p>
-                <div class="email"></div>
-                <button>Subscribe</button>
-             </div>  
-         </div>
-        <div class="footer_flex2">
-            <p>beers@branches.com</p>
-            <p>+xx xxxxxxxx</p>
-                <div class="footer_illustrations"> 
-                     <img src="images/facebook-icon.svg" alt="Facebook Icon">
-                     <img src="images/Instagram-icon.svg" alt="Instagram Icon">
-                     <img src="images/linkedin-icon.svg" alt="Linkedin Icon">
-                 </div>
-         </div>    
+        <div class="newsletter">
+          <p>Subscribe to our newsletter</p>
+          <div class="email"></div>
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="footer_flex2">
+        <p>beers@branches.com</p>
+        <p>+xx xxxxxxxx</p>
+        <div class="footer_illustrations">
+          <img src="images/facebook-icon.svg" alt="Facebook Icon" />
+          <img src="images/Instagram-icon.svg" alt="Instagram Icon" />
+          <img src="images/linkedin-icon.svg" alt="Linkedin Icon" />
+        </div>
+      </div>
     </footer>
+    <template>
+      <li>
+        <h2 class="name"></h2>
+        <p class="tbeer"></p>
+        <p class="pro"></p>
+        <p class="land"></p>
+        <p class="brew"></p>
+        <p class="pri"></p>
+        <p class="si"></p>
+        <p class="decrip"></p>
+        <img src="" class="beerimg" alt="" />
+      </li>
+    </template>
     <script src="js/productList.js"></script>
-</body>
+  </body>
 </html>
