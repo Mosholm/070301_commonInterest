@@ -59,6 +59,8 @@ nav li {
   background-size: cover;
   background-repeat: no-repeat;
   grid-row: 1/4;
+  min-width: 100%;
+  height: auto;
 }
 
 .explore .image {
