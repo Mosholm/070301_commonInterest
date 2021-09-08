@@ -45,12 +45,11 @@ nav li {
 }
 
 .slider > * {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
   flex-shrink: 0;
   width: 60vw;
-  height: 300px;
+  min-height: 20rem;
+  min-width: 300px;
   margin: 4rem 2rem 1rem;
   padding: 1rem;
   font-family: var(--primary-font);
@@ -58,9 +57,13 @@ nav li {
 .image {
   background-size: cover;
   background-repeat: no-repeat;
-  grid-row: 1/4;
-  min-width: 100%;
-  height: auto;
+  width: 100%;
+ height: auto;
+  min-width: 280px; 
+}
+.sliderContent{
+  align-self: center;
+  padding-right: 4rem;
 }
 
 .explore .image {
@@ -111,4 +114,18 @@ button {
 
 footer {
   background-color: blue;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .sliderContent p {
+display: none;
+    }
+  
+}
+@media only screen and (max-width: 800px) {
+  .slider .image{
+display: none;
+  }
+
 }
