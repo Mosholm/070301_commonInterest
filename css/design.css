@@ -58,10 +58,10 @@ nav li {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
- height: auto;
-  min-width: 280px; 
+  height: auto;
+  min-width: 280px;
 }
-.sliderContent{
+.sliderContent {
   align-self: center;
   padding-right: 4rem;
 }
@@ -116,16 +116,13 @@ footer {
   background-color: blue;
 }
 
-
 @media only screen and (max-width: 1000px) {
-    .sliderContent p {
-display: none;
-    }
-  
+  .sliderContent p {
+    display: none;
+  }
 }
 @media only screen and (max-width: 800px) {
-  .slider .image{
-display: none;
+  .slider .image {
+    display: none;
   }
-
 }
