@@ -27,35 +27,42 @@ header {
   align-items: center;
   border-bottom: 2px solid black;
   width: 100%;
+  background-color: white;
+  padding-top: 20px;
 }
 
 .logo {
-  font-family: var(--secondary-font);
-  padding-top: 1.2rem;
+  font-family: var(--primary-font);
   color: red;
   font-size: 28px;
   text-transform: uppercase;
+  text-decoration: none;
 }
+
 header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0;
+  margin: 0.5vw 1.2vw 0.05vw;
   font-family: var(--primary-font);
   font-size: 15px;
-  color: var(--color-2);
   padding: 0;
 }
 
 header nav li {
   list-style: none;
-  margin: 0.8vw 1.5vw 0.3vw;
   padding: 7px;
 }
 
-nav ul li:hover {
-  background-color: var(--color-2);
+.button {
+  text-decoration: none;
+  color: var(--color-2);
+  padding: 0.3vw 1.2vw 0.3vw;
+}
+
+.button:hover {
   color: white;
+  background-color: var(--color-2);
 }
 
 .slider {
@@ -82,8 +89,8 @@ nav ul li:hover {
 .image {
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   min-width: 280px;
 }
 .sliderContent {
@@ -114,6 +121,7 @@ nav ul li:hover {
 .slider a:hover {
   --offset: 0.4em;
 }
+
 button {
   background-color: var(--color-2);
   border-radius: 0.5rem;
@@ -137,92 +145,104 @@ button {
 
 /* Styling the Grid  */
 
-.grid_beer{
+.grid_beer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   margin: 5vw 5vw 5vw 5vw;
   row-gap: 2vw;
-}
-
-.flex_beer{
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-
 }
 
-.image_beer{
-  width: 20vw;
-  height: 20vw;
+.flex_beer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.image_beer {
+  width: 300px;
+  height: 300px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-#pilsner_image{
+#pilsner_image {
   background-image: url(../images/Illustrations/PILSNER_carlsberg.svg);
 }
 
-#pale_image{
+#pale_image {
   background-image: url(../images/Illustrations/PALEALE_leffe.svg);
 }
 
-#ipa_image{
+#ipa_image {
   background-image: url(../images/Illustrations/IPA_stonewall.svg);
 }
 
-#stout_image{
+#stout_image {
   background-image: url(../images/Illustrations/STOUT-limfjord.svg);
 }
 
-#sour_image{
+#sour_image {
   background-image: url(../images/Illustrations/SOUR_Berry.svg);
 }
 
-#weissbeer_image{
+#weissbeer_image {
   background-image: url(../images/Illustrations/WIESSBEER_erdinger.svg);
 }
 
-#amber_image{
+#amber_image {
   background-image: url(../images/Illustrations/AMBERBEER_Americanamber.svg);
 }
 
-#nonalcho_image{
+#nonalcho_image {
   background-image: url(../images/Illustrations/NOALCHO_Drinkinthesun\ copy.svg);
-  padding-bottom: 0vw;;
- }
+  padding-bottom: 0vw;
+}
 
-.grid_beer a{
+.category_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid_beer a {
   text-decoration: none;
   font-family: var(--primary-font);
-  font-size: 1.5vw;
-  color: var(--color-5);
+  font-size: 18px;
+  color: var(--color-2);
   margin-top: 1vw;
+  background-color: var(--color-4);
+  padding: 2.5px 5px;
+}
+
+.grid_beer a:hover {
+  background-color: var(--color-5);
+  color: white;
 }
 
 /* Styling the footer */
 
-footer{
+footer {
   background-color: var(--color-2);
   /* height: 20vw; */
 }
 
-.footer_flex1{
-display: flex;
-justify-content: space-between;
-padding: 1vw 0vw 0vw 5vw;
+.footer_flex1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 0vw 0vw 5vw;
 }
 
-footer h2{
+footer h2 {
   color: var(--color-5);
   font-family: var(--primary-font);
   font-size: 3vw;
   margin-top: 1vw;
-
+  text-transform: uppercase;
 }
 
-footer h3{
+footer h3 {
   color: white;
   font-family: var(--secondary-font);
   font-size: 1.2vw;
@@ -231,18 +251,18 @@ footer h3{
   margin-top: -1vw;
 }
 
-footer p{
+footer p {
   color: white;
   font-family: var(--secondary-font);
   font-size: 1.5vw;
   margin-right: 2rem;
 }
 
-.newsletter p{
+.newsletter p {
   font-family: var(--primary-font);
 }
 
-.email{
+.email {
   background: white;
   opacity: 0.4;
   height: 3vw;
@@ -251,7 +271,7 @@ footer p{
   margin-bottom: 1vw;
 }
 
-.newsletter button{
+.newsletter button {
   background-color: var(--color-3);
   border: none;
   color: var(--color-5);
@@ -266,36 +286,46 @@ footer p{
   display: inline-block;
 }
 
-.newsletter{
+.newsletter {
   padding-right: 5vw;
 }
 
-.footer_flex2{
+.footer_flex2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 0 10vw 2vw 5vw;
-  margin-top: -4vw; 
+  margin-top: -4vw;
 }
 
 /* .footer_illustrations{
   padding-right: 20vw;
 } */
 
-footer img{
+footer img {
   width: 2vw;
   margin-left: 2vw;
 }
-
 
 @media only screen and (max-width: 1000px) {
   .sliderContent p {
     display: none;
   }
+
+  header nav ul {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
 }
 @media only screen and (max-width: 800px) {
   .slider .image {
     display: none;
   }
+
+
 }
