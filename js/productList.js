@@ -48,7 +48,7 @@ function gotData(data) {
       copy.querySelector(".si").textContent = obj.size;
 
       //wont show img? https://rdb-simpledb.restdb.io/media/(id or filename)?key=22631469345172666884
-      copy.querySelector(".beerimg").src = obj.img;
+      copy.querySelector(".beerimg").src = obj.url;
 
       parent.appendChild(copy);
     }
