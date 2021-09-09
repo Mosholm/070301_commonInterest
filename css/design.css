@@ -219,12 +219,13 @@ button {
   padding-right: 2vw;
   margin-bottom: 2vw;
   background-color: var(--color-3);
+  width: 40%;
+  min-width: 300px;
 }
 
 .infoAllBeer img {
   width: 50%;
   height: 30px;
-
 }
 
 .infoAllBeer button {
